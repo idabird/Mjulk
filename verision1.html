@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="verision1.css">
+    <title>verision1</title>
+</head>
+<body>
+<canvas id="canvas" class="main-canvas"></canvas>
+
+<!-- Koden nedanför är hämtad från cssbuttons.io -->
+<button id= "c-button" class="c-button c-button--gooey" > HOLD SPACEBAR TO STIR</button>
+<button id="startStop" class="btn draw-border btn--gooey" >
+  <label id="startStopLabel" for="">START</label>
+  <div class="btn__blobs">
+    <div></div>
+    <div></div>
+    <div></div>
+    </div>
+  </button>
+  <svg style="display: block; height: 0; width: 0;" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="goo">
+        <feGaussianBlur result="blur" stdDeviation="10" in="SourceGraphic"></feGaussianBlur>
+        <feColorMatrix result="goo" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" mode="matrix" in="blur"></feColorMatrix>
+        <feBlend in2="goo" in="SourceGraphic"></feBlend>
+      </filter>
+    </defs>
+  </svg>
+  
+    
+
+<script src="verision1.js"></script>
+</body>
+</html>
+
